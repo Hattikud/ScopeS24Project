@@ -1,10 +1,10 @@
 # ScopeS24Project
 
 
-Overall Stats: \n
-Average \n
-Minimum score \n
-Highest Score \n
+Overall Stats: <br> 
+Average <br>
+Minimum score <br>
+Highest Score <br>
 <hr>
 
 Style Items:
