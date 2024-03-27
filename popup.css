@@ -1,0 +1,6 @@
+body {
+    width: 500px;
+    height: 400px;
+    background: rgb(102,65,89);
+    background: linear-gradient(90deg, rgba(102,65,89,1) 0%, rgba(215,128,93,1) 35%, rgba(147,169,197,1) 65%, rgba(234,231,227,1) 88%);
+}
