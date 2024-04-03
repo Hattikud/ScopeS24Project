@@ -46,3 +46,18 @@ for (let i = 1; i < scores.length; i++) {
 const average = totalPointsEarned / totalPointsAvailable;
 
 console.log(average, lowest, highest, biggestJump, biggestDrop);
+
+
+(async () => {
+    await chrome.runtime.sendMessage(
+        {average: average,
+        lowest: lowest,
+        highest: highest,
+        biggestJump: biggestJump,
+        biggestDrop: biggestDrop
+        });
+  })();
+  
+
+
+    

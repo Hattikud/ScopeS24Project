@@ -12,5 +12,11 @@
             "https://www.gradescope.com/courses/*"
           ]
         }
+    ],
+    "background": {
+      "service_worker": "service_worker.js"
+    },
+    "permissions": [
+      "activeTab"
     ]
 }
