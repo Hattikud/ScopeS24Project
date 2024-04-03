@@ -1,9 +1,16 @@
-chrome.runtime.onMessage.addListener(
-    async function(request, sender, sendResponse) {
-        console.log(sender.tab ?
-                  "from a content script:" + sender.tab.url :
-                  "from the extension");
-        console.log(request);
+let dataForPopup;
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.message === "dataForPopup") {
+    dataForPopup = message.data;
+  } else if (message.message === "openPopupRequest") {
+    // Check if dataForPopup exists and send it to the popup if it does
+    if (dataForPopup) {
+      chrome.runtime.sendMessage({
+        message: "popupData",
+        data: dataForPopup
+      });
+      dataForPopup = null; // Clear data after sending
     }
-  );
-  
+  }
+});
