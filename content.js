@@ -16,8 +16,7 @@ let received = parseFloat(scoreArr[0]);
 let total = parseFloat(scoreArr[1]);
 let curGrade = received / total;
 
-let totalPointsEarned = received;
-let totalPointsAvailable = total;
+let totalGrade = curGrade;
 let lowest = curGrade;
 let highest = curGrade;
 let biggestJump = 0.0
@@ -31,8 +30,7 @@ for (let i = 1; i < scores.length; i++) {
     total = parseFloat(scoreArr[1]);
     curGrade = received / total;
 
-    totalPointsEarned += received;
-    totalPointsAvailable += total;
+    totalGrade += curGrade;
     lowest = Math.min(lowest, curGrade);
     highest = Math.max(highest, curGrade);
 
@@ -43,7 +41,7 @@ for (let i = 1; i < scores.length; i++) {
     prevGrade = curGrade;
 }
 
-const average = totalPointsEarned / totalPointsAvailable;
+const average = totalGrade / scores.length;
 
 const data = {
     total_assignments: scores.length,

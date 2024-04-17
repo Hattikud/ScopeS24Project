@@ -29,15 +29,16 @@ function formatData(data) {
 
 function handleData(data) {
   const dataFormatted = formatData(data);
+  insertData(dataFormatted);
 }
 
 function insertData(dataFormatted) {
-  document.getElementById("totalAssignmentsVal") = dataFormatted.total_assignments;
-  document.getElementById("averageVal") = dataFormatted.average_score;
-  document.getElementById("highestVal") = dataFormatted.highest_score;
-  document.getElementById("lowestScoreVal") = dataFormatted.lowest_score;
-  document.getElementById("biggestJump") = dataFormatted.biggest_jump;
-  document.getElementById("biggestDrop") = dataFormatted.biggest_drop;
+  document.getElementById("totalAssignmentsVal").innerText = dataFormatted.total_assignments;
+  document.getElementById("averageVal").innerText = dataFormatted.average_score;
+  document.getElementById("highestVal").innerText = dataFormatted.highest_score;
+  document.getElementById("lowestScoreVal").innerText = dataFormatted.lowest_score;
+  document.getElementById("biggestJumpVal").innerText = dataFormatted.biggest_jump;
+  document.getElementById("biggestDropVal").innerText = dataFormatted.biggest_drop;
 }
 
 function percentageFormatter(num) {
