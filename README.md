@@ -7,8 +7,8 @@ Minimum score <br>
 Highest Score <br>
 Biggest Jump <br>
 Biggest Drop <br>
-Total Unsubmitted Assignments <br>
-Total Submitted Assignments <br>
+Total Assignments <br>
+ <br>
 <hr>
 
 Style Items:
