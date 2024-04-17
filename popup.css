@@ -1,17 +1,129 @@
 body {
     width: 500px;
     height: 400px;
-    background: rgb(102,65,89);
-    background: linear-gradient(90deg, rgba(102,65,89,1) 0%, rgba(215,128,93,1) 35%, rgba(147,169,197,1) 65%, rgba(234,231,227,1) 88%);
+    background: rgb(64, 19, 106);
+    /* background: linear-gradient(90deg, rgba(102,65,89,1) 0%, rgba(215,128,93,1) 35%, rgba(147,169,197,1) 65%, rgba(234,231,227,1) 88%); */
+    color: white;
+    font-size: 15px;
 }
-
 .monoton-regular {
     font-family: "Monoton", sans-serif;
     font-weight: 1;
     font-style: normal;
 }
-
 h1 {
     color: white;
     font-size: 48px;
+    margin-bottom: 0px;
+}
+.vertical-line {
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 10px;
+}
+
+
+
+
+/* first row */
+#topRow{
+    display: flex;
+}
+#totalAssignmentsBox{
+    width: 200px;
+    height: 120px;
+    /* background-color: blue; */
+}
+#totalAssignments{
+    margin: 0px;
+}
+#totalAssignmentsVal{
+    line-height: 90px;
+    margin: 0px;
+    font-size: 4em;
+}
+#averageScoreBox{
+    width: 200px;
+    height: 120px;
+    /* background-color: rgb(55, 169, 74); */
+}
+#averageScore{
+    margin: 0px;
+}
+#averageVal{
+    line-height: 90px;
+    margin: 0px;
+    font-size: 4em;
+}
+
+
+
+/* Second row */
+#secondRow{
+    display: flex;
+}
+#highestScoreBox{
+    width: 200px;
+    height: 80px;
+    margin-bottom: 10px;
+    /* background-color: rgb(247, 162, 15); */
+}
+#highestScore{
+    margin: 0px;
+}
+#highestVal{
+    line-height: 50px;
+    margin: 0px;
+    font-size: 3em;
+}
+#lowestScoreBox{
+    width: 200px;
+    height: 80px;
+    margin-bottom: 10px;
+    /* background-color: rgb(209, 28, 240); */
+}
+#lowestScore{
+    margin: 0px;
+}
+#lowestVal{
+    line-height: 50px;
+    margin: 0px;
+    font-size: 3em;
+}
+
+
+
+/* Third Row */
+#thirdRow{
+    display: flex;
+}
+
+#biggestJumpBox{
+    width: 200px;
+    height: 80px;
+    /* background-color: rgb(15, 201, 247); */
+}
+
+#biggestJump{
+    margin: 0px;
+}
+#biggestJumpVal{
+    line-height: 50px;
+    margin: 0px;
+    font-size: 3em;
+}
+
+#biggestDropBox{
+    width: 200px;
+    height: 80px;
+    /* background-color: rgb(240, 28, 35); */
+}
+
+#biggestDrop{
+    margin: 0px;
+}
+#biggestDropVal{
+    line-height: 50px;
+    margin: 0px;
+    font-size: 3em;
 }

@@ -7,25 +7,36 @@
     </head>
     <body>
         <div style="font-family: 'Monoton', sans-serif;">
-            <!-- Your content here -->
-            <h1>Gradescope</h1>
-            <div>
-                <p id="totalAssignments">Total Assignments: <span class="number" id="totalAssignmentsVal">30</span></p>
+            <h1>Gradescope Wrapped!</h1>
+            <hr>
+            <div id="topRow">
+                <div id="totalAssignmentsBox">
+                    <p id="totalAssignments">Total Assignments: <br><span id="totalAssignmentsVal">30</span></p>
+                </div>
+                <div class="vertical-line"></div>
+                <div id="averageScoreBox">
+                    <p id="averageScore">Average Score: <span class="number" id="averageVal">50%</span></p>
+                </div>
             </div>
-            <div>
-                <p id="averageScore">Average Score: <span class="number" id="averageVal">50%</span></p>
+            
+            <div id="secondRow">
+                <div id="highestScoreBox">
+                    <p id="highestScore">Highest Score: <span class="number" id="highestVal">50%</span></p>
+                </div>
+                <div class="vertical-line"></div>
+                <div id="lowestScoreBox">
+                    <p id="lowestScore">Lowest Score: <span class="number" id="lowestVal">50%</span></p>
+                </div>
             </div>
-            <div>
-                <p id="highestScore">Highest Score: <span class="number" id="highestVal">50%</span></p>
-            </div>
-            <div>
-                <p id="lowestScore">Lowest Score: <span class="number" id="lowestScoreVal">50%</span></p>
-            </div>
-            <div>
-                <p id="biggestJump">Biggest Jump: <span class="number" id="biggestJumpVal">50%</span></p>
-            </div>
-            <div>
-                <p id="biggestDrop">Biggest Drop: <span class="number" id="biggestDropVal">50%</span></p>
+
+            <div id="thirdRow">
+                <div id="biggestJumpBox">
+                    <p id="biggestJump">Biggest Jump: <span class="number" id="biggestJumpVal">50%</span></p>
+                </div>
+                <div class="vertical-line"></div>
+                <div id="biggestDropBox">
+                    <p id="biggestDrop">Biggest Drop: <span class="number" id="biggestDropVal">50%</span></p>
+                </div>
             </div>
         </div>
 

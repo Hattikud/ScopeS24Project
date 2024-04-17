@@ -4,13 +4,14 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.message === "popupData") {
       // Use the received data (message.data) in your popup logic
       messageData = message.data;
+      console.log("popup: received message data", messageData);
       handleData(messageData);
-      console.log("Received data", message.data);
     }
   });
   
 // Optionally, send a message to the background script requesting stored data
 // when the popup opens (if needed)
+console.log("popup: sending openPopupRequest");
 chrome.runtime.sendMessage({ message: "openPopupRequest" });
 
 function formatData(data) {
@@ -39,7 +40,7 @@ function insertData(dataFormatted) {
   document.getElementById("totalAssignmentsVal").innerText = dataFormatted.total_assignments;
   document.getElementById("averageVal").innerText = dataFormatted.average_score;
   document.getElementById("highestVal").innerText = dataFormatted.highest_score;
-  document.getElementById("lowestScoreVal").innerText = dataFormatted.lowest_score;
+  document.getElementById("lowestVal").innerText = dataFormatted.lowest_score;
   document.getElementById("biggestJumpVal").innerText = dataFormatted.biggest_jump;
   document.getElementById("biggestDropVal").innerText = dataFormatted.biggest_drop;
 }
