@@ -12,7 +12,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         message: "popupData",
         data: dataForPopup
       });
-      // dataForPopup = null; // Clear data after sending
     }
   }
 });
