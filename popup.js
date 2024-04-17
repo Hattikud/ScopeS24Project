@@ -1,7 +1,10 @@
+let messageData;
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.message === "popupData") {
       // Use the received data (message.data) in your popup logic
-      handleData(message.data);
+      messageData = message.data;
+      handleData(messageData);
       console.log("Received data", message.data);
     }
   });
@@ -49,5 +52,6 @@ function percentageFormatter(num) {
   }).format(num / 100);
 }
 
-
-console.log(document.querySelector("#lowestDrop"));
+if (messageData) {
+  handleData(data);
+}
