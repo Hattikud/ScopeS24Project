@@ -47,7 +47,6 @@ const average = totalPointsEarned / totalPointsAvailable;
 
 console.log(average, lowest, highest, biggestJump, biggestDrop);
 
-
 chrome.runtime.sendMessage({
     message: "dataForPopup",
     data: "test_data"
