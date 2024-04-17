@@ -1,6 +1,5 @@
 <html>
     <head>
-        <script src="popup.js"></script> 
         <link rel="stylesheet" href="popup.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,12 +10,25 @@
             <!-- Your content here -->
             <h1>Gradescope</h1>
             <div>
-                <p>Average: <span id="averageVal">50%</span></p>
+                <p id="totalAssignments">Total Assignments: <span class="number" id="totalAssignments">30</span></p>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <p id="averageScore">Average Score: <span class="number" id="averageVal">50%</span></p>
+            </div>
+            <div>
+                <p id="highestScore">Highest Score: <span class="number" id="highestVal">50%</span></p>
+            </div>
+            <div>
+                <p id="lowestScore">Lowest Score: <span class="number" id="lowestScore">50%</span></p>
+            </div>
+            <div>
+                <p id="biggestJump">Biggest Jump: <span class="number" id="biggestVal">50%</span></p>
+            </div>
+            <div>
+                <p id="lowestDrop">Lowest Drop: <span class="number" id="lowestVal">50%</span></p>
+            </div>
         </div>
+
+        <script src="popup.js"></script> 
     </body>
 </html>

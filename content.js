@@ -45,13 +45,16 @@ for (let i = 1; i < scores.length; i++) {
 
 const average = totalPointsEarned / totalPointsAvailable;
 
-console.log(average, lowest, highest, biggestJump, biggestDrop);
+const data = {
+    total_assignments: scores.length,
+    average_score: average,
+    lowest_score: lowest,
+    highest_score: highest,
+    biggest_jump: biggestJump,
+    biggest_drop: biggestDrop,
+}
 
 chrome.runtime.sendMessage({
     message: "dataForPopup",
-    data: "test_data"
-  });
-  
-
-
-    
+    data: data
+});
